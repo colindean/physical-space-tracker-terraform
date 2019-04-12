@@ -9,3 +9,8 @@ variable "github_organization" {
 variable "github_token" {
   type = "string"
 }
+
+variable "github_api_base_url" {
+  type = "string"
+  default = "https://github.com/api/v3/"
+}

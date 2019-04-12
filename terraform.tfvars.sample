@@ -1,3 +1,9 @@
 github_organization     = ""               # your organization
 phys_tracker_repository = "office-tracker" # the repo you created
+# instead of furnishing github_token here, consider setting GITHUB_TOKEN envvar
+# or passing the variable's value through the terraform command line invocation
+# with `-var github_token=${MY_GITHUB_TOKEN}`
+# github_token           = "" # your github token
+# github_api_base_url     = "https://git.example.com/api/v3/" # your organization's GHE API URL
+#
 
