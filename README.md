@@ -14,6 +14,7 @@ These are installable on macOS with [Homebrew](https://brew.sh) by running
 
 1. Create a new repository in your GitHub organization.
 1. Set the environment variables in the table below.
+1. Run `deleteLabels.sh` to remove all existing labels, such as defaults.
 1. Set the configuration vars in `terraform.tfvars`. See
    `terraform.tfvars.sample` for a sample.
 1. `terraform plan`

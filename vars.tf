@@ -11,6 +11,6 @@ variable "github_token" {
 }
 
 variable "github_api_base_url" {
-  type = "string"
+  type    = "string"
   default = "https://github.com/api/v3/"
 }
