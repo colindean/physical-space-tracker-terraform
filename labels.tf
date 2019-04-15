@@ -129,3 +129,12 @@ resource "github_issue_label" "org_wontfix" {
   name        = "Won't fix"
   description = "Problems that cannot be addressed, we'll just have to live with them!"
 }
+
+resource "github_issue_label" "room_all" {
+  count = "${length(var.room_list)}"
+
+  repository  = "${data.github_repository.phys_tracker.name}"
+  color       = "${local.color_room}"
+  name        = "Room: ${var.room_list[count.index]}"
+  description = "Problems affecting ${var.room_list[count.index]}"
+}

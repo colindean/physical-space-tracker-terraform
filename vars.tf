@@ -14,3 +14,8 @@ variable "github_api_base_url" {
   type    = "string"
   default = "https://github.com/api/v3/"
 }
+
+variable "room_list" {
+  type = "list"
+  default = []
+}

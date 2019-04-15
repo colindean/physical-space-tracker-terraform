@@ -1,9 +1,26 @@
 github_organization     = ""               # your organization
 phys_tracker_repository = "office-tracker" # the repo you created
-# instead of furnishing github_token here, consider setting GITHUB_TOKEN envvar
-# or passing the variable's value through the terraform command line invocation
-# with `-var github_token=${MY_GITHUB_TOKEN}`
-# github_token           = "" # your github token
-# github_api_base_url     = "https://git.example.com/api/v3/" # your organization's GHE API URL
-#
 
+### List the easily identifiable rooms in your facility.
+### A fantastic mapping would be pulling in reservable rooms from a calendar
+### system and manually mixing-in non-reservable rooms like a kitchen or bathroom.
+room_list = [
+  "Kitchen",
+  "Pairing Station",
+  "Lounge",
+  "Mother's Room",
+  "Main Conference Room",
+  "Auditorium"
+  "Phone Booth",
+  "Men's Restroom",
+  "Women's Restroom"
+]
+
+### instead of furnishing github_token here, consider setting GITHUB_TOKEN envvar
+### or passing the variable's value through the terraform command line invocation
+### with `-var github_token=${MY_GITHUB_TOKEN}`
+# github_token           = "" # your github token
+
+### Set this to your company's GitHub Enterprise instance. You probably only have
+### to change the domain part of the URL.
+# github_api_base_url     = "https://git.example.com/api/v3/" # your organization's GHE API URL
