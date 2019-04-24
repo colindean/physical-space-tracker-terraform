@@ -130,6 +130,13 @@ resource "github_issue_label" "org_wontfix" {
   description = "Problems that cannot be addressed, we'll just have to live with them!"
 }
 
+resource "github_issue_label" "org_triage" {
+  repository  = "${data.github_repository.phys_tracker.name}"
+  color       = "${local.color_org}"
+  name        = "Triage"
+  description = "Problems that haven't yet been reviewed by the triage committee!"
+}
+
 resource "github_issue_label" "room_all" {
   count = "${length(var.room_list)}"
 
