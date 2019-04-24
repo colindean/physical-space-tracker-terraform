@@ -19,3 +19,13 @@ variable "room_list" {
   type = "list"
   default = []
 }
+
+variable "triage_team_members" {
+  type = "list"
+  default = []
+}
+
+variable "triage_team_maintainers" {
+  type = "list"
+  default = []
+}

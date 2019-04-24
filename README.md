@@ -12,6 +12,9 @@ These are installable on macOS with [Homebrew](https://brew.sh) by running
 
 ## Steps
 
+_⚠ You must be an organization admin to add people to the triage team._ 
+_That's why the default has no members!_
+
 1. Create a new repository in your GitHub organization.
 1. Set the environment variables in the table below.
 1. Run `deleteLabels.sh` to remove all existing labels, such as defaults.
@@ -19,6 +22,10 @@ These are installable on macOS with [Homebrew](https://brew.sh) by running
    `terraform.tfvars.sample` for a sample.
 1. `terraform plan`
 1. `terraform apply`
+
+If you want to also set up an issue template, you can use the module in
+`issue_templates` but you will need to install the `git` provider for
+Terraform. See the README in that directory for more information.
 
 ## Environment variables
 

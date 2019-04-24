@@ -15,6 +15,14 @@ room_list = [
   "Men's Restroom",
   "Women's Restroom"
 ]
+### Usernames of people who should have maintainer access to the triage team
+#triage_team_maintainers = [
+#
+#]
+### Usernames of people who should have member access to the triage team
+#triage_team_members = [
+#
+#]
 
 ### instead of furnishing github_token here, consider setting GITHUB_TOKEN envvar
 ### or passing the variable's value through the terraform command line invocation
