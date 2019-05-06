@@ -81,6 +81,12 @@ resource "github_issue_label" "nature_plumbing" {
   name        = "Nature: Plumbing"
   description = "Problems that a plumber would have to fix."
 }
+resource "github_issue_label" "nature_hvac" {
+  repository  = "${data.github_repository.phys_tracker.name}"
+  color       = "${local.color_nature}"
+  name        = "Nature: HVAC"
+  description = "Problems that an heating, ventilation, and air conditioning tech would have to fix."
+}
 
 ##
 # Action
